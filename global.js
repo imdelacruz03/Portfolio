@@ -62,6 +62,6 @@ for (let p of pages) {
 // if navLinks can't find any matching links it returns underfined
 // instead of an element therefore when .classList.add() is called the 
 // whole script will crash with errors
-currentLink?.classList.add('current');
+//currentLink?.classList.add('current');
 
 // currentLink? means "only continue if this isn't undefined"

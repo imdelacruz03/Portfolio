@@ -13,3 +13,24 @@ body {
     font-weight: bold;
     text-decoration: underline; /* or whatever style you want */
 }
+
+:root{
+  color-scheme: light dark;
+}
+
+nav {
+    --border-color: oklch(50% 10% 200 / 40%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+}
+
+input, textarea, button, select {
+    font-family: inherit;
+}

@@ -47,6 +47,31 @@ for (let p of pages) {
     nav.append(a);
 }
 
+// Step 4.2 - create the switcher
+document.body.insertAdjacentHTML('afterbegin', `
+    <label class="color-scheme">
+        Theme:
+        <select>
+            <option value="light dark">Automatic</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </label>
+`);
+
+// Step 4.4 - make it work
+const select = document.querySelector('.color-scheme select');
+
+select.addEventListener('input', function(event) {
+    document.documentElement.style.setProperty('color-scheme', event.target.value);
+    localStorage.colorScheme = event.target.value;  // Step 4.5 - save preference
+});
+
+// Step 4.5 - load saved preference on page load
+if ('colorScheme' in localStorage) {
+    document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
+    select.value = localStorage.colorScheme;
+}
 
 // creates an array of all the nav links on whichever page is 
 // currently loaded in the braoswer at that moment

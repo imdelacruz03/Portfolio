@@ -21,6 +21,7 @@ body {
 nav {
     --border-color: oklch(50% 10% 200 / 40%);
     border-bottom: 1px solid var(--border-color);
+    word-spacing: 5px;
 }
 
 .color-scheme {

@@ -3,6 +3,9 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
   img {
@@ -19,9 +22,16 @@ body {
 }
 
 nav {
-    --border-color: oklch(50% 10% 200 / 40%);
-    border-bottom: 1px solid var(--border-color);
-    word-spacing: 5px;
+  display: felx;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a{
+  padding: 0.4rem 0.8rem;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .color-scheme {

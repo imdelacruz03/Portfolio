@@ -25,10 +25,14 @@ body {
 nav {
   display: felx;
   gap: 1rem;
+  margin-bottom: 1em;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 212, 212);
 }
 
 nav a{
-  padding: 0.4rem 0.8rem;
+  padding: 0.5em;
   border: 1px solid oklch(50% 10% 200 / 40%);
   border-radius: 4px;
   text-decoration: none;

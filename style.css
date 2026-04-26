@@ -1,10 +1,12 @@
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
-  max-width: 800px;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+main {
+  max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -15,27 +17,30 @@ body {
 
   nav a.current {
     font-weight: bold;
-    text-decoration: underline; /* or whatever style you want */
-}
+    border-bottom-style: solid;
+    border-bottom-color: rgb(212, 210, 210);
+  }
 
 :root{
   color-scheme: light dark;
 }
 
 nav {
-  display: felx;
+  display: flex;
   gap: 1rem;
-  margin-bottom: 1em;
-  border-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(212, 212, 212);
+  margin-bottom: 0.2em;
+  border-bottom: 2px solid rgb(158, 158, 158);
 }
 
 nav a{
   padding: 0.5em;
-  border: 1px solid oklch(50% 10% 200 / 40%);
-  border-radius: 4px;
   text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+  border-bottom: 4px solid grey;
+  font-weight: bold;
 }
 
 .color-scheme {
@@ -48,4 +53,46 @@ nav a{
 
 input, textarea, button, select {
     font-family: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 0 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+}
+
+.projects h2 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
 }

@@ -96,3 +96,43 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 400%;
 }
+
+#projects-pie-chart {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+#projects-pie-plot {
+  max-width: 12em;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.legend {
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  display: grid;
+  gap: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  list-style: none;
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+

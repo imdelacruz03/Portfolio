@@ -86,7 +86,7 @@ if (searchInput) {
     });
 
     renderProjects(filteredProjects, projectsContainer, 'h2');
-    renderPieChart(filteredProjects); // pie chart reflects search
+    renderPieChart(filteredProjects); 
   });
 }
 

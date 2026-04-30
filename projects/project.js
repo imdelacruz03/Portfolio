@@ -82,11 +82,10 @@ if (searchInput) {
       let matchesSearch = values.includes(query.toLowerCase());
       let matchesYear = selectedIndex === -1 || project.year === currentData[selectedIndex]?.label;
       return matchesSearch && matchesYear;
-      return values.includes(query.toLowerCase());
     });
 
     renderProjects(filteredProjects, projectsContainer, 'h2');
-    renderPieChart(filteredProjects); // pie chart reflects search
+    renderPieChart(filteredProjects); 
   });
 }
 

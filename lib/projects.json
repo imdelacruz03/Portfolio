@@ -1,62 +1,74 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Project 1",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis amet ratione at rem nesciunt unde maxime veniam doloribus, deleniti, velit architecto aut nostrum tenetur dolorum dolorem! Voluptatibus voluptate id expedita?"
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis amet ratione at rem nesciunt unde maxime veniam doloribus, deleniti, velit architecto aut nostrum tenetur dolorum dolorem! Voluptatibus voluptate id expedita?",
+        "year": 2024
     },
     {
-        "title": "Sed obcaecati asperiores cupiditate!",
+        "title": "Project 2",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Doloremque non tenetur autem aliquam! Odio explicabo veniam nesciunt, et rem minus necessitatibus ratione porro recusandae fugit harum quia! A, nisi! Eos itaque doloremque accusamus nulla sed illum, laboriosam eveniet."
+        "description": "Doloremque non tenetur autem aliquam! Odio explicabo veniam nesciunt, et rem minus necessitatibus ratione porro recusandae fugit harum quia! A, nisi! Eos itaque doloremque accusamus nulla sed illum, laboriosam eveniet.",
+        "year": 2024
     },
     {
-        "title": "Cum quidem vel ut.",
+        "title": "Project 3",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Asperiores, ut, praesentium alias assumenda tempora obcaecati quibusdam quas veritatis similique, aliquid animi in sapiente nostrum provident nisi mollitia vel impedit? Reprehenderit laborum unde minima, deserunt aperiam aliquid beatae sed!"
+        "description": "Asperiores, ut, praesentium alias assumenda tempora obcaecati quibusdam quas veritatis similique, aliquid animi in sapiente nostrum provident nisi mollitia vel impedit? Reprehenderit laborum unde minima, deserunt aperiam aliquid beatae sed!",
+        "year": 2025
     },
     {
-        "title": "Quibusdam quae quis itaque?",
+        "title": "Project 4",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eaque, earum quae a dignissimos magnam officia molestiae, quaerat culpa nemo consectetur officiis sit vel fugiat consequuntur assumenda odit accusamus. Est ex quibusdam dicta voluptate perspiciatis. Ducimus illo ex obcaecati."
+        "description": "Eaque, earum quae a dignissimos magnam officia molestiae, quaerat culpa nemo consectetur officiis sit vel fugiat consequuntur assumenda odit accusamus. Est ex quibusdam dicta voluptate perspiciatis. Ducimus illo ex obcaecati.",
+        "year": 2025
     },
     {
-        "title": "Illum optio ea beatae!",
+        "title": "Project 5",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ratione id cumque totam magnam sint odit distinctio aliquid quia nobis quis, tempore harum aperiam eligendi ipsam a expedita molestiae est. Hic iste consectetur quasi doloremque obcaecati! Repellat, esse quia."
+        "description": "Ratione id cumque totam magnam sint odit distinctio aliquid quia nobis quis, tempore harum aperiam eligendi ipsam a expedita molestiae est. Hic iste consectetur quasi doloremque obcaecati! Repellat, esse quia.",
+        "year": 2023
     },
     {
-        "title": "Praesentium vel consequuntur dolores!",
+        "title": "Project 6",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quae enim voluptatem libero at illum, veniam ut? Rem accusantium atque quam nobis, magni dignissimos eos commodi suscipit laboriosam consectetur delectus minus incidunt, itaque id recusandae quibusdam inventore odit? Qui!"
+        "description": "Quae enim voluptatem libero at illum, veniam ut? Rem accusantium atque quam nobis, magni dignissimos eos commodi suscipit laboriosam consectetur delectus minus incidunt, itaque id recusandae quibusdam inventore odit? Qui!",
+        "year": 2023
     },
     {
-        "title": "Blanditiis enim saepe officiis.",
+        "title": "Project 7",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Omnis quo dicta architecto magni atque tempore ipsa in dolores? Ex itaque magnam corporis praesentium alias, delectus exercitationem modi cumque, architecto, voluptatum fuga maxime omnis nobis. Officia repudiandae reiciendis accusamus!"
+        "description": "Omnis quo dicta architecto magni atque tempore ipsa in dolores? Ex itaque magnam corporis praesentium alias, delectus exercitationem modi cumque, architecto, voluptatum fuga maxime omnis nobis. Officia repudiandae reiciendis accusamus!",
+        "year": 2026
     },
     {
-        "title": "Necessitatibus reprehenderit pariatur est!",
+        "title": "Project 8",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Similique, nobis magnam? Nobis magnam, at nostrum sapiente nisi aliquid laboriosam illum quia voluptatem accusantium. Accusamus distinctio ducimus quis blanditiis deleniti, corporis perferendis praesentium et necessitatibus, aspernatur ratione, eius molestiae?"
+        "description": "Similique, nobis magnam? Nobis magnam, at nostrum sapiente nisi aliquid laboriosam illum quia voluptatem accusantium. Accusamus distinctio ducimus quis blanditiis deleniti, corporis perferendis praesentium et necessitatibus, aspernatur ratione, eius molestiae?",
+        "year": 2026
     },
     {
-        "title": "Vel nisi sequi esse.",
+        "title": "Project 9",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Beatae, qui libero perspiciatis minus odio tempore maiores esse quo deleniti distinctio laboriosam quas voluptatum voluptatem facilis molestiae doloremque unde quia modi temporibus est sequi laudantium dignissimos quos vitae. Suscipit."
+        "description": "Beatae, qui libero perspiciatis minus odio tempore maiores esse quo deleniti distinctio laboriosam quas voluptatum voluptatem facilis molestiae doloremque unde quia modi temporibus est sequi laudantium dignissimos quos vitae. Suscipit.",
+        "year": 2021
     },
     {
-        "title": "Sed esse temporibus pariatur?",
+        "title": "Project 10",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nisi ullam minus corrupti temporibus aspernatur, quae incidunt, nulla ad, consequuntur recusandae quaerat a tempore. Reiciendis, ullam quas quam, tenetur corrupti a corporis dolore sequi ratione minus saepe numquam neque!"
+        "description": "Nisi ullam minus corrupti temporibus aspernatur, quae incidunt, nulla ad, consequuntur recusandae quaerat a tempore. Reiciendis, ullam quas quam, tenetur corrupti a corporis dolore sequi ratione minus saepe numquam neque!",
+        "year": 2021
     },
     {
-        "title": "Explicabo voluptatem blanditiis ipsam.",
+        "title": "Project 11",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Magni sequi iusto harum ratione labore? Corporis doloribus maiores veritatis iste nostrum eveniet neque nesciunt iusto placeat harum autem mollitia non inventore in nam, quaerat quas quis dolorem laborum illo!"
+        "description": "Magni sequi iusto harum ratione labore? Corporis doloribus maiores veritatis iste nostrum eveniet neque nesciunt iusto placeat harum autem mollitia non inventore in nam, quaerat quas quis dolorem laborum illo!",
+        "year": 2020
     },
     {
-        "title": "A sapiente molestiae quidem!",
+        "title": "Project 12",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fugiat consequatur excepturi deleniti id tempora tenetur ea in reprehenderit officia iusto, non magnam laborum velit quia blanditiis? Ipsam eum obcaecati odit, debitis corrupti vitae magnam neque quae esse. Ex."
+        "description": "Fugiat consequatur excepturi deleniti id tempora tenetur ea in reprehenderit officia iusto, non magnam laborum velit quia blanditiis? Ipsam eum obcaecati odit, debitis corrupti vitae magnam neque quae esse. Ex.",
+        "year": 2020
     }
 ]

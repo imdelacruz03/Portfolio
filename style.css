@@ -99,40 +99,74 @@ h1 {
 
 #projects-pie-chart {
   display: flex;
+  max-width: 100%;
   align-items: center;
   gap: 2em;
+  margin-block: 2em;
 }
 
-#projects-pie-plot {
-  max-width: 10em;
-  overflow: visible;
-  flex-shrink: 0;
+#projects-pie-chart svg {
+  width: 10em;
+  height: 10em;
+  flex-shrink: 0; /* pie chart never shrinks */
 }
 
 .legend {
   display: grid;
-  gap: 0.5em;
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
   list-style: none;
+  padding: 1em;
+  gap: 0.5em;
+  border: 1px solid lightgrey;
+  border-radius: 0.5em;
+  flex: 1; 
+  min-width: 0; 
 }
 
-
-.legend-item {
+.legend-item{
   display: flex;
   align-items: center;
   gap: 0.5em;
-  min-width: 9em;
 }
 
-.swatch {
+.swatch{
+  display: inline-block;
   width: 1em;
   height: 1em;
+  aspect-ratio: 1 / 1;
   background-color: var(--color);
   border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
 }
 
+.searchbar {
+  min-height: 3em;
+  font-size: 1.2em;
+}
+
+&:has(path:hover){
+  path:not(:hover){
+    opacity: 0.5;
+  }
+}
+
+path{
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected{
+  --color: oklch(61.67% 0.25308 29.223)!important;
+
+  &:is(path){
+    fill: var(--color);
+  }
+}
+
+
+svg:has(.selected) path:not(.selected) {
+  opacity: 0.3;
+}
+
+ul.legend:has(.selected) li:not(.selected) {
+  opacity: 0.3;
+}

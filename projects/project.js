@@ -79,6 +79,9 @@ if (searchInput) {
 
     let filteredProjects = projects.filter((project) => {
       let values = Object.values(project).join('\n').toLowerCase();
+      let matchesSearch = values.includes(query.toLowerCase());
+      let matchesYear = selectedIndex === -1 || project.year === currentData[selectedIndex]?.label;
+      return matchesSearch && matchesYear;
       return values.includes(query.toLowerCase());
     });
 

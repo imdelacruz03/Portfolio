@@ -86,6 +86,11 @@ if (searchInput) {
 
     renderProjects(filteredProjects, projectsContainer, 'h2');
     renderPieChart(projects); 
+
+    d3.select('#projects-pie-chart svg').selectAll('path')
+      .attr('class', (_, i) => i === selectedIndex ? 'selected' : '');
+    d3.select('.legend').selectAll('li')
+      .attr('class', (_, i) => i === selectedIndex ? 'legend-item selected' : 'legend-item');
   });
 }
 

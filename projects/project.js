@@ -77,11 +77,11 @@ if (searchInput) {
   searchInput.addEventListener('input', (event) => {
     query = event.target.value;
 
-    selectedIndex = -1;
-
     let filteredProjects = projects.filter((project) => {
       let values = Object.values(project).join('\n').toLowerCase();
-      return values.includes(query.toLocaleLowerCase());
+      let matchesSearch = values.includes(query.toLowerCase());
+      let matchesYear = selectedIndex === -1 || project.year === currentData[selectedIndex]?.label;
+      return matchesSearch && matchesYear;
     });
 
     renderProjects(filteredProjects, projectsContainer, 'h2');

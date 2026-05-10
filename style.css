@@ -11,17 +11,17 @@ main {
   padding: 1rem;
 }
 
-  img {
-      max-width: 400px;
-  }
+img {
+  max-width: 400px;
+}
 
-  nav a.current {
-    font-weight: bold;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(212, 210, 210);
-  }
+nav a.current {
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 210, 210);
+}
 
-:root{
+:root {
   color-scheme: light dark;
 }
 
@@ -32,27 +32,27 @@ nav {
   border-bottom: 2px solid rgb(158, 158, 158);
 }
 
-nav a{
+nav a {
   padding: 0.5em;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-nav a:hover{
+nav a:hover {
   border-bottom: 4px solid grey;
   font-weight: bold;
 }
 
 .color-scheme {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 80%;
-    font-family: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
 }
 
 input, textarea, button, select {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 form {
@@ -71,7 +71,7 @@ input, textarea, button {
   box-sizing: border-box;
 }
 
-.projects{
+.projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 0 1em;
@@ -108,7 +108,7 @@ h1 {
 #projects-pie-chart svg {
   width: 10em;
   height: 10em;
-  flex-shrink: 0; /* pie chart never shrinks */
+  flex-shrink: 0;
 }
 
 .legend {
@@ -119,17 +119,17 @@ h1 {
   gap: 0.5em;
   border: 1px solid lightgrey;
   border-radius: 0.5em;
-  flex: 1; 
-  min-width: 0; 
+  flex: 1;
+  min-width: 0;
 }
 
-.legend-item{
+.legend-item {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.swatch{
+.swatch {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -143,25 +143,24 @@ h1 {
   font-size: 1.2em;
 }
 
-&:has(path:hover){
-  path:not(:hover){
+&:has(path:hover) {
+  path:not(:hover) {
     opacity: 0.5;
   }
 }
 
-path{
+path {
   transition: 300ms;
   cursor: pointer;
 }
 
-.selected{
-  --color: oklch(61.67% 0.25308 29.223)!important;
+.selected {
+  --color: oklch(61.67% 0.25308 29.223) !important;
 
-  &:is(path){
+  &:is(path) {
     fill: var(--color);
   }
 }
-
 
 svg:has(.selected) path:not(.selected) {
   opacity: 0.3;
@@ -169,4 +168,106 @@ svg:has(.selected) path:not(.selected) {
 
 ul.legend:has(.selected) li:not(.selected) {
   opacity: 0.3;
+}
+
+.meta {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Chart */
+#chart svg {
+  background: white;
+}
+
+.gridlines line {
+  stroke: #ddd;
+  stroke-opacity: 0.5;
+}
+
+.gridlines path {
+  display: none;
+}
+
+/* Stats */
+dl.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em 2em;
+  justify-content: center;
+}
+
+dl.stats dt {
+  font-weight: bold;
+  text-align: right;
+}
+
+dl.stats dd {
+  margin: 0;
+  text-align: left;
+}
+
+/* Tooltip */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.3em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  color: grey;
+  font-size: 0.85em;
+  text-align: right;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: bold;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 1em;
+  backdrop-filter: blur(4px);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
 }
